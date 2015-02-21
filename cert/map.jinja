@@ -1,0 +1,7 @@
+{% set map = salt['grains.filter_by']({
+    'Debian': {
+        'cert_dir': '/etc/ssl/certs',
+        'key_dir': '/etc/ssl/private',
+        'pkgs': [ 'ca-certificates' ],
+    },
+}, grain='os', merge=salt['pillar.get']('cert:lookup')) %}

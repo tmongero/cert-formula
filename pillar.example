@@ -1,0 +1,11 @@
+cert:
+  certlist:
+    # Deploy certificate and key files
+    name1: {}
+    # Deploy certificate only  
+    name2:
+      key: False
+    # Deploy certificate and key with custom filenames  
+    name3:
+      cert_file: path_to_certfile
+      key_file: path_to_keyfile
