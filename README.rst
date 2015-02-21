@@ -23,7 +23,7 @@ Deploys given certificates and keys.
 Example
 =======
 
-Put certificates and keys to */srv/salt/files/cert/* or any other cert directory under file_roots and list them in pillar. See *cert/pillar.example*.
+Put certificates and keys to */srv/salt/files/cert/* or any other *cert* directory under file_roots and list them in pillar. See *cert/pillar.example*.
 
 Notes
 =====
