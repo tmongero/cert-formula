@@ -23,9 +23,4 @@ Deploys given certificates and keys.
 Example
 =======
 
-Put certificates and keys to */srv/salt/files/cert/* or any other *cert* directory under file_roots and list them in pillar. See *cert/pillar.example*.
-
-Notes
-=====
-
-All certs will be named to *certname.pem* and their key files to *certname.key.pem*.
+Put certificates to  */srv/salt/files/cert/* or any other *cert* directory under file_roots and list them in pillar. Private keys are deployed via pillar. See *cert/pillar.example*.
