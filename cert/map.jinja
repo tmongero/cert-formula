@@ -1,4 +1,17 @@
 {% set map = salt['grains.filter_by']({
+    'Arch': {
+        'cert_dir': '/etc/ssl/certs',
+        'key_dir': '/etc/ssl/private',
+        'pkgs': [ 'ca-certificates', 
+                  'ca-certificates-mozilla',
+                  'ca-certificates-utils',],
+        'cert_user': 'root',
+        'key_user': 'root',
+        'cert_group': 'root',
+        'key_group': 'root',
+        'cert_mode': 644,
+        'key_mode': 600,
+    },
     'Debian': {
         'cert_dir': '/etc/ssl/certs',
         'key_dir': '/etc/ssl/private',
