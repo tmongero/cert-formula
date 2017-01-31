@@ -47,6 +47,8 @@ cert_packages:
   cmd.run:
     - name: update-ca-certificates
     - runas: root
+    - onchanges:
+      - file: {{ cert_dir }}/{{ name }}
 {% endif %}
 
 {% endfor %}
