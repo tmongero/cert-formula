@@ -34,7 +34,7 @@ cert_packages:
     - mode: {{ cert_mode }}  
 
   {% if key %}
-{{ key_dir }}/{{ name }}:
+{{ key_dir }}/{{ name|replace("pem", "key") }}:
   file.managed:
     - contents: |
 {{ key|indent(8, True) }}
